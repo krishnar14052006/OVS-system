@@ -1,0 +1,64 @@
+ <html>
+    <head>
+        <title>Online voting system - regestration</title>
+        <link rel="stylesheet" href="../uploads/stylesheet.css">
+        
+    </head>
+        <body style="background: url('../uploads/4448.jpg');background-size:cover;background-position:center;">    
+
+            <style>
+            #address{
+                width: 20%;
+                text-align: center;
+                
+            }
+            #imagepart{
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+                width: 50%;
+          
+            }
+            #role{
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 5px;
+                width: 50%;
+            }
+            #role select{
+                border-radius: 5px;
+                padding: 10px;
+            }
+              
+            </style>
+            <div class="bodysection">
+         <h1> Online voting system</h1>
+         <hr>
+         <h3>regestration</h3>
+         <form action="../api/regester.php" method="POST" enctype="multipart/form-data">
+            
+            <input type="text" name="name" placeholder="enter name">
+            <input type="number" name="mobile" placeholder="enter mobile"><br><br>
+            <input type="password" name="password" placeholder="enter password">
+            <input type="password" name="cpassword" placeholder="confirm password"><br><br>
+            <input type="address"  name="address" placeholder="enter address"><br><br>
+            <center>
+            <div id="imagepart">
+                Upload image <input type="file" name="photo">
+            </div>
+            <br>
+       
+        <div id="role">
+            Select role <select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select>
+        </div>
+    </center><br>
+            <button class="regesterbtn">Regester</button><br><br>
+            Already user <a style="color: rgb(253, 255, 254)" href="../uploads/home.html">HOME</a>
+        </div>
+         </form>
+        </body>
+   
+</html>
